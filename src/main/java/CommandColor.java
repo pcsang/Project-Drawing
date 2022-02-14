@@ -21,7 +21,7 @@ public class CommandColor extends CommandChecker{
         int lengthSubString = subString.length();
         if(lengthSubString == 1){
             char color = subString.charAt(0);
-            if(Character.isLetter(color)) {
+            if(Character.isLetter(color)) { // sua lai kiem tra do day
                 checker = true;
             }
         }else

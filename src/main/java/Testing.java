@@ -21,10 +21,13 @@ public class Testing {
         array[0][1] = '1';
         array[1][0] = '2';
         array[1][1] = '2';
-        List<Character> lista = new ArrayList<>();
-        for(int i=0; i<2; i++)
-            for(int j=0;j<2;j++)
-                lista.add(array[i][j]);
-
+        StringBuilder a = new StringBuilder();
+        for (int i=0; i<2;i++){
+            for(int j=0;j<2; j++){
+                a.append(array[i][j]);
+            }
+            a.append('\n');
+        }
+        System.out.println(a);
     }
 }

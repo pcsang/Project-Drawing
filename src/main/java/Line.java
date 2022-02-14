@@ -23,7 +23,6 @@ public class Line extends ShapeDrawing {
             }
         }else
             System.out.println(" Please check command !!!");
-
         super.show(canvas);
     }
 

@@ -6,10 +6,10 @@ public class CommandSquares extends CommandChecker{
     @Override
     public boolean checking(Command command) {
         boolean checker = false;
-        String[] arrCommand = super.format(command);
-        if (arrCommand.length == 5 && arrCommand[0].equals("R")) {
-            if (super.isNumber(arrCommand[1]) && super.isNumber(arrCommand[2])
-                    && super.isNumber((arrCommand[3])) && super.isNumber(arrCommand[4])) {
+        String[] commandArr = super.format(command);
+        if (commandArr.length == 5 && commandArr[0].equals("R")) {
+            if (super.isNumber(commandArr[1]) && super.isNumber(commandArr[2])
+                    && super.isNumber((commandArr[3])) && super.isNumber(commandArr[4])) {
                 checker = true;
             } else
                 System.out.println("The argument dose not match!!");

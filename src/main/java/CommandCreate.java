@@ -1,7 +1,5 @@
-import java.sql.SQLOutput;
-
-public class CommandCreat extends CommandChecker {
-    public CommandCreat(){
+public class CommandCreate extends CommandChecker {
+    public CommandCreate(){
         super();
     }
 

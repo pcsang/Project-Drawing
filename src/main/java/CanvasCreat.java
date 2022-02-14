@@ -2,7 +2,7 @@ public class CanvasCreat extends ShapeDrawing {
     public CanvasCreat(){
         super();
     }
-    CommandChecker create = new CommandCreat();
+    CommandChecker create = new CommandCreate();
 
     @Override
     public void draw(Canvas canvas, Command command) {

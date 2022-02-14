@@ -4,7 +4,7 @@ public class Squares extends ShapeDrawing {
     }
 
     CommandChecker squares = new CommandSquares();
-    ShapeDrawing line = new Line();
+    //ShapeDrawing line = new Line();
     @Override
     public void draw(Canvas canvas, Command command) {
         if(squares.checking(command)){
@@ -21,7 +21,7 @@ public class Squares extends ShapeDrawing {
         int row2 = Integer.parseInt(commandArr[4]);
         int column1 = Integer.parseInt(commandArr[1]);
         int column2 = Integer.parseInt(commandArr[3]);
-
+        ShapeDrawing line = new Line();
         String command1 = "L "+column1+" "+ row1+" "+column2+" "+row1;
         Command line1 = new Command(command1);
         line.draw(canvas, line1);

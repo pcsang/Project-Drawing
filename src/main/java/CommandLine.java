@@ -33,8 +33,8 @@ public class CommandLine extends CommandChecker {
             if (column1 == column2 && row1 <= row2){
                 checker = true;
             }
-        }else
-            System.out.println("Please check Argument");
+        }
+
         return checker;
     }
 }

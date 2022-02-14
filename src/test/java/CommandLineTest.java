@@ -11,6 +11,7 @@ public class CommandLineTest {
         final boolean result = line.checking(command);
         Assert.assertTrue(String.valueOf(checker), result);
     }
+
     @Test
     public void checkingTestFalse(){
         final String checker = "false";

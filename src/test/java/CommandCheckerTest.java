@@ -14,7 +14,7 @@ public class CommandCheckerTest {
     public void formatTest(){
         final String[] arr = {"L","1","2","6","2"};
         Command command = new Command("   L  1   2  6  2    ");
-        final String[] arrCommand =commandChecker.format(command);
+        final String[] arrCommand = commandChecker.format(command);
         Assert.assertArrayEquals(arr, arrCommand);
     }
 }

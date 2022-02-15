@@ -16,8 +16,6 @@ public class CanvasCreat extends ShapeDrawing {
                 canvas.create();
                 super.show(canvas);
             }
-        } else {
-            System.out.println(" Please check command !!!");
         }
     }
 }

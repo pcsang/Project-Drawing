@@ -1,3 +1,7 @@
+import Message.ManageMessages;
+
+import java.lang.reflect.Member;
+
 public class Line extends ShapeDrawing {
     public Line(){
         super();
@@ -20,10 +24,9 @@ public class Line extends ShapeDrawing {
                 if (column1 == column2){
                     drawRow(canvas, column1, row1, row2);
                 }
-            }else
-                System.out.println("Please check argument of command");
+            }
         }else
-            System.out.println(" Please check command !!!");
+            System.out.println(ManageMessages.Messages_Check_Command.getMessage());
     }
 
     public void drawColum(Canvas canvas, int row, int colum_1, int colum_2){

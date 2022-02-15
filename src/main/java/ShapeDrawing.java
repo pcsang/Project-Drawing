@@ -14,7 +14,7 @@ public abstract  class ShapeDrawing {
             for(int j=0; j<colum; j++){
                 System.out.print(can[i][j]);
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 

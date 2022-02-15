@@ -19,9 +19,8 @@ public class Color extends ShapeDrawing{
         int row = Integer.parseInt(commandArr[2]);
         int column = Integer.parseInt(commandArr[1]);
         char colorChar = commandArr[3].charAt(0);
-        
+        char[][] can = canvas.getCanvas();
         if(row > 0 && column > 0 && row <= canvas.getHeight() && column <= canvas.getWidth()){
-            char[][] can = canvas.getCanvas();
             char cell = can[row][column];
             if(cell == 'x' || cell == colorChar){
                 return;

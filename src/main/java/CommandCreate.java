@@ -1,3 +1,5 @@
+import Message.ManageMessages;
+
 public class CommandCreate extends CommandChecker {
     public CommandCreate(){
         super();
@@ -12,8 +14,9 @@ public class CommandCreate extends CommandChecker {
             if (super.isNumber(commandArr[1]) && super.isNumber(commandArr[2])) {
                 fag = true;
             } else
-                System.out.println("The argument dose not match!!!");
-        }
+                System.out.println(ManageMessages.Messages_ArgumentNo.getMessage());
+        }else
+            System.out.println(ManageMessages.Messages_Check_Key.getMessage());
         return fag;
     }
 
@@ -26,7 +29,7 @@ public class CommandCreate extends CommandChecker {
         if(height > 0 && width > 0){
             fag = true;
         }else
-            System.out.println("Please check the argument!!! ");
+            System.out.println(ManageMessages.Messages_Check_Argument.getMessage());
         return fag;
     }
 }

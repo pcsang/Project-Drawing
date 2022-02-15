@@ -1,3 +1,5 @@
+import Message.ManageMessages;
+
 public class CommandLine extends CommandChecker {
     public CommandLine() {
         super();
@@ -12,7 +14,7 @@ public class CommandLine extends CommandChecker {
                     && super.isNumber((arrCommand[3])) && super.isNumber(arrCommand[4])) {
                 checker = true;
             } else
-                System.out.println("The argument dose not match!!");
+                System.out.println(ManageMessages.Messages_ArgumentNo.getMessage());
         }
         return checker;
     }
@@ -33,8 +35,8 @@ public class CommandLine extends CommandChecker {
             if (column1 == column2 && row1 <= row2){
                 checker = true;
             }
-        }
-
+        }else
+            System.out.println(ManageMessages.Messages_Check_Argument.getMessage());
         return checker;
     }
 }

@@ -45,6 +45,10 @@ public class Canvas {
         return width;
     }
 
+    public void setCanvas(int x, int y, char color){
+        canvas[x][y] = color;
+    }
+
     public char[][] getCanvas() {
         return canvas;
     }

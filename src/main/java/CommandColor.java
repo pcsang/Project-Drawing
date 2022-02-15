@@ -1,3 +1,5 @@
+import Message.ManageMessages;
+
 public class CommandColor extends CommandChecker{
     public CommandColor(){
         super();
@@ -11,8 +13,9 @@ public class CommandColor extends CommandChecker{
             if(super.isNumber(commandArr[1]) && super.isNumber(commandArr[2]) && isChar(commandArr[3])){
                 checker = true;
             }else
-                System.out.println("The argument dose not match!!!");
-        }
+                System.out.println(ManageMessages.Messages_ArgumentNo.getMessage());
+        }else
+            System.out.println(ManageMessages.Messages_Check_Command.getMessage());
         return checker;
     }
 
@@ -20,12 +23,9 @@ public class CommandColor extends CommandChecker{
         boolean checker = false;
         int lengthSubString = subString.length();
         if(lengthSubString == 1){
-            char color = subString.charAt(0);
-            if(Character.isLetter(color)) { // sua lai kiem tra do day
-                checker = true;
-            }
+            checker = true;
         }else
-            System.out.println("Color must a type Character");
+            System.out.println(ManageMessages.Messages_NotTypeChar.getMessage());
         return checker;
     }
 
@@ -37,7 +37,8 @@ public class CommandColor extends CommandChecker{
         int column = Integer.parseInt(commandArr[1]);
         if(row > 0 && column > 0 && row <= canvas.getHeight() && column <= canvas.getWidth()){
             checker = true;
-        }
+        }else
+            System.out.println(ManageMessages.Messages_Check_Argument.getMessage());
         return checker;
     }
 }

@@ -1,3 +1,5 @@
+import Message.ManageMessages;
+
 import java.util.Scanner;
 
 public class Main {
@@ -8,7 +10,7 @@ public class Main {
         CommandChecker create = new CommandCreate();
         boolean flag = true;
         do{
-            System.out.println("Please create your Canvas width and height");
+            System.out.println(ManageMessages.Messages_Create_Canvas.getMessage());
             String commandCreate = sc.nextLine();
             command.setCommand(commandCreate);
 
@@ -25,7 +27,7 @@ public class Main {
         }while(flag);
 
         do{
-            System.out.println("Input command drawing");
+            System.out.println(ManageMessages.Messages_Command_Drawing.getMessage());
             String commandDraw = sc.nextLine();
             command.setCommand(commandDraw);
             String[] commandArr = create.format(command);
@@ -50,7 +52,7 @@ public class Main {
                     drawColor.draw(canvas, command);
                 }
             }else
-                System.out.println("This drawing type is unsupported");
+                System.out.println(ManageMessages.Messages_Check_Key.getMessage());
         }while(true);
     }
 }

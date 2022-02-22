@@ -11,12 +11,12 @@ public class LineTest {
         canvas.create();
         line.draw(canvas, command);
         String canvasString = arrayToString(canvas);
-        final String result = new String("----------------------\n" +
+        final String result =                   "----------------------\n" +
                                                 "|                    |\n"+
                                                 "|xxxxxx              |\n"+
                                                 "|                    |\n"+
                                                 "|                    |\n"+
-                                                "----------------------\n");
+                                                "----------------------\n";
         Assert.assertEquals(result, canvasString);
     }
 
